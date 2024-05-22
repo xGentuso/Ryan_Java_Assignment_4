@@ -54,8 +54,8 @@ public class StockUp {
             }
             goBack = false; // Reset goBack to false
             break;          
-					case 3: // add funds
-						double amount = validator.fundValidation(ink, input, portfolio.getBalance());
+	    		case 3: // add funds
+					double amount = validator.fundValidation(ink, input, portfolio.getBalance());
 						portfolio.addFunds(amount);
 						// print the new balance
 						System.out.printf("New balance: $%.2f\n", portfolio.getBalance());
